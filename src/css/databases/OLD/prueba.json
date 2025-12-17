@@ -1,0 +1,51 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"id": "65131",
+			"type": "Feature",
+			"properties": {
+				"popupContent": "Fraxinus ornus",
+				"numident": "8226",
+				"Statut de l'arbre": "Vivant",
+				"Espèce": "Fraxinus ornus",
+				"Type de lieu": "Espace d'accompagnement résidentiel",
+				"Lieu de production": "Arbor",
+				"Durée estimée de vie": "> à 20 ans",
+				"Danger": "Petit",
+				"Patrimonial": "Valeur ornementale",
+				"Date de plantation": "17/01/2009",
+				"Age de l'arbre": "11",
+				"Tranche d'âge": "1-20 years",
+				"Adresse de reference": "18, Rue des Mimosas, Schaarbeek, 1030, BEL",
+				"Element cartographique de reference": "Rue des Mimosas",
+				"Niveau mécanique": "A+",
+				"Niveau physiologique": "A+",
+				"Réversibilité du risque": "false",
+				"Niveaux de vigeur": "non renseigné",
+				"Type de sol": "Pavés/Dales/Gravier",
+				"Environnement": "Voirie urbaine",
+				"Distribution": "Rangée simple",
+				"Patrimoine": "Valeur ornementale",
+				"Fréquence": "Moyenne",
+				"Pollution": "Moyen",
+				"Luminosité": "Haut",
+				"Compacité": "Moyen",
+				"Circonférence": "67",
+				"Hauteur": "5",
+				"Troncs multiples": "false",
+				"Diamètre de la couronne": "300",
+				"Structure": "Libre",
+				"Gestion": "Gestion écologique",
+				"Etape de développement": "Jeune"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					4.387255,
+					50.865249
+				]
+			}
+		}
+	]
+}
