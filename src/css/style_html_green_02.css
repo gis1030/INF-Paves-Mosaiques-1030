@@ -1,0 +1,180 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 4px;
+    padding: 4px;
+    text-align: left;
+}
+
+main {
+    font-family: tahoma, helvetica;
+    font-weight: bold;
+    background-color: #2e0e792f;
+    color: rgb(0, 0, 0);
+    width: 1000px;
+    /*width: 100%;*/
+}
+
+dib {
+    min-height: 100vh;
+    min-width: 100vW;
+}
+
+header{
+    background-color: #2e0e792f;
+    /*width: 1000px;*/
+    /*top: 1%;*/
+    display: flex;
+    width: 99%;
+    height: 9%;
+    position: fixed;
+    top: 1px;
+    margin: 1px 1px;
+    align-items: center;
+    padding: 1px;
+    border: 0px solid #2e0e792f;
+    justify-content: left;
+    color: rgb(252, 252, 252);
+    text-shadow: rgb(0, 0, 0) 0 0 .9em;
+    background: url(images/Title_04.png) center center no-repeat;
+    box-sizing: border-box;
+    font-family: tahoma, helvetica;
+    font-weight: bold;
+    font-size: large;
+    font-size: calc(1.05rem + 1.05vw);
+    margin: 0.1%;
+}
+
+footer{
+    background-color: #2e0e792f;
+    width: 99%;
+    height: 10%;
+    position: fixed;
+    bottom: 1px;
+    margin: 1px 1px;
+    align-items: center;
+    padding: 1px;
+    border: 0px solid #2e0e792f;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(141, 141, 141) 0 0 .9em;
+    background: url(images/Footer_04.png) center center no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    font-family: tahoma, helvetica;
+    font-weight: bold;
+    font-size: calc(0.3rem + 0.3vw);
+	font: center;
+    margin: 0.1%;
+	text-align:center;
+}
+
+div#Region05 {
+    position: absolute;
+    display: flex;
+    height: 77%;
+    left: 1%;
+    top: 12.5%;
+    width: 97%;
+    background-color: transparent;
+    opacity: 1;
+    display: flex;
+}
+
+div#Region01 {
+    /*position: absolute;*/
+    position: fixed;
+    width: 565px;
+    height: 79%;
+    border: 0.1em solid transparent;
+    margin: 1.6em 0.1em 1.6em 0em;
+    padding: 0.1em;
+    top: 75px;
+    background-color: rgb(236, 248, 237);
+    box-sizing: border-box;
+    display: flex;
+}
+
+div#Region04 {
+    position: fixed;
+    position: absolute;
+    width: 68.5%;
+    height: 100%;
+    border: 0.1em solid transparent;
+    margin: 1.6em 0.1em 1.6em 35.5em;
+    top: 0x;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    min-width: 10vw;
+}
+
+div#Region00 {
+    /*position: absolute;*/
+    position: fixed;
+    top: 75px;
+    /*height: 78.5%; */
+    width: 99%;
+    height: 79.25%;
+    background-color: transparent;
+    opacity: 1;
+    border: 0.1em solid transparent;
+    margin: 1.5em 0em 1em 0em;
+    padding: 0.1em;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+div#Region99 {
+    position: fixed;
+	/*position: relative;*/
+    /*position: absolute;*/
+    width: 99%;
+    height: 79%;
+    border: 0.1em solid transparent;
+	margin: 0% 0% 0% 0%;
+    background-color: rgb(224, 216, 247);
+    box-sizing: border-box;
+    display: flex;
+	top: 10%;
+}
+
+#maCarte {
+    flex-grow: 1;
+    border: 0px solid transparent;
+    width: 100%;
+    height: 100%
+    /*display: flex;*/
+}
+
+.small {
+    font-size: small;
+}
+
+.larger {
+    font-size: larger;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.xx-large {
+    font-size: xx-large;
+}
+
+.point {
+    font-size: 24pt;
+}
+
+.percent {
+    font-size: 200%;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}

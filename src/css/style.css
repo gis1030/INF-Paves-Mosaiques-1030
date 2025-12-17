@@ -1,0 +1,120 @@
+:root {
+  /* Variables para un mantenimiento más fácil */
+  --primary-color: #00537e;
+  --secondary-color: #f0f8ff;
+  /* Un azul claro para el fondo */
+  --text-color: #333;
+}
+
+body {
+  font-family: "Calibri", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+.logo-container img {
+  width: 250px;
+  /* O el tamaño que prefieras, por ejemplo, 100px o 200px */
+  height: auto;
+  /* Mantiene la proporción original de la imagen */
+  display: block;
+  /* Para centrarlo correctamente */
+  margin: 0 auto 1rem auto;
+  /* Centra la imagen y añade un margen inferior */
+}
+
+.page-header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.introduction {
+  font-size: 1.25rem;
+  font-weight: demi bold;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.link-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.link-section h2 {
+  font-size: 2.0rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
+}
+
+.link-section h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 1rem;
+}
+
+.link-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link-list li {
+  margin-bottom: 1rem;
+}
+
+.link-list a {
+  display: block;
+  /* Para que el área del enlace sea mayor */
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link-list a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.link-title {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.link-description {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: #888;
+}

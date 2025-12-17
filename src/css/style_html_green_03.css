@@ -1,0 +1,208 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 4px;
+    padding: 4px;
+    text-align: left;
+}
+
+main {
+    font-family: tahoma, helvetica;
+    font-weight: bold;
+    background-color: #2e0e792f;
+    color: rgb(0, 0, 0);
+    width: 1000px;
+    /*width: 100%;*/
+}
+
+dib {
+    min-height: 100vh;
+    min-width: 100vW;
+}
+
+header{
+    background-color: #2e0e792f;
+    /*width: 1000px;*/
+    /*top: 1%;*/
+    display: flex;
+    width: 65%;
+    height: 9%;
+    position: fixed;
+    top: 1px;
+    margin: 1px 1px;
+    align-items: center;
+    padding: 1px;
+    border: 0px solid #2e0e792f;
+    justify-content: left;
+    color: rgb(252, 252, 252);
+    text-shadow: rgb(0, 0, 0) 0 0 .9em;
+    background: url(images/Title_04.png) center center no-repeat;
+    box-sizing: border-box;
+    font-family: tahoma, helvetica;
+    font-weight: bold;
+    font-size: large;
+    font-size: calc(1.05rem + 1.05vw);
+    margin: 0.1%;
+}
+
+footer{
+    background-color: #2e0e792f;
+    width: 65%;
+    height: 9%;
+    position: fixed;
+    bottom: 1px;
+    margin: 1px 1px;
+    align-items: center;
+    padding: 1px;
+    border: 0px solid #2e0e792f;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(141, 141, 141) 0 0 .9em;
+    background: url(images/Footer_04.png) center center no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    font-family: tahoma, helvetica;
+    font-weight: bold;
+    font-size: calc(0.3rem + 0.3vw);
+    font: center;
+    margin: 0.1%;
+    text-align:
+    center;
+}
+
+
+div#Region05 {
+    position: absolute;
+    display: flex;
+    height: 77%;
+    left: 1%;
+    top: 12.5%;
+    width: 97%;
+    background-color: transparent;
+    opacity: 1;
+    display: flex;
+}
+
+div#Region01 {
+    position: absolute;
+    /* position: fixed; */
+    width: 34.5%;
+    height: 99%;
+    border: 0.1em solid transparent;
+    margin: 0% 0% 0% 65.5%;
+    padding: 0.1em;
+    top: 0.5%;
+    background-color: rgb(255, 208, 208);
+    background-color: rgb(236, 248, 237);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+div#Region04 {
+    /* position: fixed; */
+    position: relative;
+    /*position: absolute;*/
+    width: 65.7%;
+    height: 99.9%;
+    border: 0.1em solid transparent;
+    /* margin: 0% 0% 0% 33.5%; */
+    background-color: rgb(224, 216, 247);
+    box-sizing: border-box;
+    display: flex;
+    top: 0.7%;
+    align-items: center;
+    justify-content: center;
+}
+
+div#Region99 {
+    position: fixed;
+	/*position: relative;*/
+    /*position: absolute;*/
+    width: 99%;
+    height: 79%;
+    border: 0.1em solid transparent;
+	margin: 0% 0% 0% 0%;
+    background-color: rgb(224, 216, 247);
+    box-sizing: border-box;
+    display: flex;
+	top: 10%;
+}
+
+div#Region00 {
+    position: absolute;
+    /* position: relative; */
+    top: 9.5%;
+    /*height: 78.5%; */
+    width: 99%;
+    height: 81%;
+    background-color: transparent;
+    opacity: 1;
+    border: 0.1em solid transparent;
+    /* margin: 0em 0em 0em 0em; */
+    /* padding: 0.1em; */
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+}
+
+div#Region07 {
+    position: fixed;
+    position: absolute;
+    width: 65.7%;
+    height: 100%;
+    border: 0.1em solid transparent;
+    /* margin: 0% 0% 0% 36%; */
+    top: 0x;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    min-width: 10vw;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    align-items: flex-start;
+    justify-content: flex-start;
+    zoom: 100%
+}
+
+#maCarte {
+    flex-grow: 1;
+    border: 0px solid transparent;
+    width: 100%;
+    height: 100%
+    /*display: flex;*/
+}
+
+.small {
+    font-size: small;
+}
+
+.larger {
+    font-size: larger;
+}
+
+.x-large {
+    font-size: x-large;
+}
+
+.xx-large {
+    font-size: xx-large;
+}
+
+.point {
+    font-size: 24pt;
+}
+
+.percent {
+    font-size: 200%;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
