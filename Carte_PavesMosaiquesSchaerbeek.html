@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pavés Mosaïques 1030</title>
+    <link rel="shortcut icon" href="src/images/ih2.ico" type="image/x-icon">
+    <meta http-equiv="content type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ïe=edge">
+    <meta charset="utf-8" />
+
+    <!-- Librerie Leaflet  https://unpkg.com/leaflet@1.7.1/dist/leaflet.css -->
+    <!-- <link rel="stylesheet" href="src/css/leaflet.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- Extension  Esri Leaflet Geocoder  -->
+    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.css"
+        integrity="sha512-IM3Hs+feyi40yZhDH6kV8vQMg4Fh20s9OzInIIAc4nx7aMYMfo+IenRUekoYsHZqGkREUgx0VvlEsgm7nCDW9g=="
+        crossorigin="">
+
+    <!-- Librerie Leaflet.markercluster https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css -->
+    <!-- Librerie Leaflet.markercluster https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css -->
+    <link rel="stylesheet" href="src/css/MarkerCluster.css">
+    <link rel="stylesheet" href="src/css/MarkerCluster.Default.css">
+
+    <!-- Extension Geoportail pour Leaflet http://ignf.github.io/geoportal-extensions/leaflet-latest/dist/GpPluginLeaflet.css -->
+    <link rel="stylesheet" href="src/css/GpPluginLeaflet.css" />
+
+    <!-- Librerie Leaflet.EasyButton : https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css -->
+    <link rel="stylesheet" href="src/css/easy-button.css">
+
+    <!-- Libreria de estilo Bootstrape-->
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- bibliothèque interne CSS -->
+    <link rel="stylesheet" href="src/css/style_html_pav_01.css">
+    <link rel="stylesheet" href="src/css/style_clusters.css">
+
+</head>
+
+<body id="ALL_HTML">
+    <div id="Internal_Body">
+        <div id="HTML_Heading">
+            <header class="page-header">
+                Schaerbeek : Pavés Mosaïques 1030
+            </header>
+            <br>
+        </div>
+
+        <div id="Region00">
+            <div id="Region04">
+                <div id="maCarte"></div>
+            </div>
+        </div>
+
+        <div id="Region01">
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <label style="font-size:1.2em; font-weight: bold; text-align: center; font-style:italic;
+                            background-color:white;
+                            color:black">Données et informations sur les pavés <br> mosaïques implantés à
+                                Schaerbeek</label>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <hr size=3>
+                        <div class="row justify-content-center">
+                            <div class="col-3 mb">
+                                <label for="CodeID_1030" class="form-label" style="font-size: calc(0.5rem + 0.3vw)">Code
+                                    ID</label>
+                                <input type="text" class="form-control input-sm" id="CodeID_1030" placeholder="id..."
+                                    disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+
+                            <div class="col-4 mb">
+                                <label for="TilesNumber_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Nombre
+                                    de pavés</label>
+                                <input type="text" class="form-control input-sm" id="TilesNumber_1030" placeholder="..."
+                                    disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+
+                            <div class="col-4 mb">
+                                <label for="Status_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Status</label>
+                                <input type="text" class="form-control input-sm" id="Status_1030"
+                                    placeholder="status..." disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-8 mb">
+                                <label for="Artist_1030" class="form-label" style="font-size: calc(0.5rem + 0.3vw)">Nom
+                                    d'artiste</label>
+                                <input type="text" class="form-control input-sm" id="Artist_1030"
+                                    placeholder="artist..." disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+
+                            <div class="col-3 mb">
+                                <label for="Year_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Année</label>
+                                <input type="text" class="form-control input-sm" id="Year_1030" placeholder="année..."
+                                    disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+
+                            <div class="col-11 mb">
+                                <label for="Comments_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Commentaires</label>
+                                <textarea rows="3" type="text" class="form-control input-sm" id="Comments_1030"
+                                    placeholder="aucun commentaires..." disabled
+                                    style="font-size: calc(0.4rem + 0.3vw)"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-11 mb">
+                                <label for="StreetFR_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Nom de la rue</label>
+                                <input type="text" class="form-control input-sm" id="StreetFR_1030"
+                                    placeholder="rue 1030..." disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+                            <div class="col-2 mb">
+                                <label for="HouseNumber_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Numero</label>
+                                <input type="text" class="form-control input-sm" id="HouseNumber_1030" placeholder="..."
+                                    disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+                            <div class="col-5 mb">
+                                <label for="Locality_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Localité</label>
+                                <input type="text" class="form-control input-sm" id="Locality_1030"
+                                    placeholder="localité..." disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+                            <div class="col-5 mb">
+                                <label for="Sector_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Quartier</label>
+                                <input type="text" class="form-control input-sm" id="Sector_1030"
+                                    placeholder="quartier..." disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <hr size=3>
+                        <div class="row justify-content-center">
+                            <div class="col-11 mb">
+                                <label for="FullAdress_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Adresse de
+                                    référence</label>
+                                <input type="text" class="form-control input-sm" id="FullAdress_1030"
+                                    placeholder="Adresse de référence..." disabled
+                                    style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+
+                            <div class="col-4 mb">
+                                <label for="Latitude_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Latitude</label>
+                                <input type="text" class="form-control input-sm" id="Latitude_1030"
+                                    placeholder="latitude..." disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+
+                            <div class="col-4 mb">
+                                <label for="Longitude_1030" class="form-label"
+                                    style="font-size: calc(0.5rem + 0.3vw)">Longitude</label>
+                                <input type="text" class="form-control input-sm" id="Longitude_1030"
+                                    placeholder="longitude..." disabled style="font-size: calc(0.4rem + 0.3vw)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p></p>
+                    <hr size=3>
+                    <div class="row justify-content-center">
+                        <div class="col-3">
+                            <button id="btnModifierData" class="btn btn-primary btn-sm"
+                                style="background-color: #35ceb9; border-color: #35ceb9" role="button"
+                                onclick="FilterData1030()">Filtre Data</button>
+                        </div>
+
+                        <div class="col-3 ">
+                            <button id="btnClear" type="button" class="btn btn-primary btn-sm"
+                                onclick="ClearData01()">Nettoyer</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="HTML_Footer">
+            <br>
+            <footer id="footer">
+                <span>
+                    <a>© 2021 </a></a><a href="mailto:ihhilal@gmail.com" style="color: #eea4a4">I.H.Hilal</a>
+                    <a>Powered for the <a href="https://www.1030.be/" style="color: #eea4a4">commune de
+                            Schaerbeek</a><br>
+                        <a>The content of this page is under the Creative Commons license, <br>
+                            full information is available
+                            <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                                style="color: #eea4a4">here.</a><br>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                                <img alt="Licencia Creative Commons" style="border-width:0"
+                                    src="src/images/by-nc-sa.eu.png" width="50" height="20"></a>
+                </span>
+            </footer>
+        </div>
+
+    </div>
+
+    <div id="JavaScript_Libraries">
+        <div id="GeoJSON_Data">
+            <!-- Fichiers Javascript Limites de Schaerbeek -->
+            <script src="src/databases/LimitesSchaerbeekQuartiers_Contour.js" type="text/javascript"></script>
+            <!-- Fichiers Javascript Limites de Schaerbeek -->
+            <script src="src/databases/LimitesSchaerbeek_Contour.js" type="text/javascript"></script>
+
+            <!-- Load databases Tiles -->
+            <script src="src/databases/01_PavesMosaiques1030_Databases_NEW.js" type="text/javascript"></script>
+            <script src="src/databases/01_PavesMosaiques1030_Databases.js" type="text/javascript"></script>
+        </div>
+
+        <div id="JavaScript_ExternalLibraries">
+            <!-- Fichiers Javascript leaflet -->
+            <!-- <script src="src/js/lib/leaflet.js"></script> -->
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin=""></script>
+
+            <!-- Librerie Javascript Leaflet.markercluster https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js  -->
+            <script src="src/js/lib/leaflet.markercluster.js"></script>
+
+            <!-- Librerie Javascript Leaflet.MousePosition http://ignf.github.io/geoportal-extensions/leaflet-latest/dist/GpPluginLeaflet.js -->
+            <script src="src/js/lib/GpPluginLeaflet.js"></script>
+
+            <!-- Librerie Javascript Esri Leaflet Geocoder -->
+            <script src="https://unpkg.com/esri-leaflet@2.5.3/dist/esri-leaflet.js"
+                integrity="sha512-K0Vddb4QdnVOAuPJBHkgrua+/A9Moyv8AQEWi0xndQ+fqbRfAFd47z4A9u1AW/spLO0gEaiE1z98PK1gl5mC5Q=="
+                crossorigin=""></script>
+            <script src="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.js"
+                integrity="sha512-HrFUyCEtIpxZloTgEKKMq4RFYhxjJkCiF5sDxuAokklOeZ68U2NPfh4MFtyIVWlsKtVbK5GD2/JzFyAfvT5ejA=="
+                crossorigin=""></script>
+
+            <!-- Librerie Javascript Leaflet.EasyButton https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js -->
+            <script src="src/js/lib/easy-button.js"></script>
+
+            <!-- Libreria javascript de Bootstrap-->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+            <script src="src/js/bootstrap.bundle.min.js"></script>
+
+            <!-- bibliothèque interne JS -->
+            <script src="src/js/index_tiles.js"></script>
+            <script src="src/js/00_index_clusters.js"></script>
+            <script src="src/js/00_index_DataPave.js"></script>
+            <script src="src/js/00_index_controlsPave.js"></script>
+            <script src="src/js/00_index_ClearData_Pave.js"></script>
+            <script src="src/js/leaflet-svg-shape-markers.min.js"></script>
+
+            <script>
+                function LocalData1030() {
+                    if (document.getElementById("Comments_1030").value == "") {
+                        document.getElementById("Comments_1030").value = "Indiquez quels sont les paramètres de recherche..."
+                    } else {
+                        document.getElementById("Comments_1030").value = "Indiquez quels sont les paramètres à modifier..." +
+                            document.getElementById("Comments_1030").value
+                    }
+
+                    localStorage.setItem("CodeID_0", document.getElementById("CodeID_1030").value);
+                    localStorage.setItem("TilesNumber_0", document.getElementById("TilesNumber_1030").value);
+                    localStorage.setItem("HouseNumber_0", document.getElementById("HouseNumber_1030").value);
+                    localStorage.setItem("Locality_0", document.getElementById("Locality_1030").value);
+                    localStorage.setItem("Latitude_0", document.getElementById("Latitude_1030").value);
+                    localStorage.setItem("Longitude_0", document.getElementById("Longitude_1030").value);
+                    localStorage.setItem("FullAdress_0", document.getElementById("FullAdress_1030").value);
+                    localStorage.setItem("Sector_0", document.getElementById("Sector_1030").value);
+                    localStorage.setItem("StreetFR_0", document.getElementById("StreetFR_1030").value);
+                    localStorage.setItem("Artist_0", document.getElementById("Artist_1030").value);
+                    localStorage.setItem("Status_0", document.getElementById("Status_1030").value);
+                    localStorage.setItem("Year_0", document.getElementById("Year_1030").value);
+                    localStorage.setItem("Comments_0", document.getElementById("Comments_1030").value);
+                }
+
+                function ModifyData1030() {
+                    LocalData1030();
+
+                    window.open("00_Carte_PavesMosaiquesSchaerbeek_ALL_21.html");
+                    window.close();
+                }
+
+                function FilterData1030() {
+                    LocalData1030();
+
+                    window.open("Carte_PavesMosaiquesSchaerbeek_Filter.html");
+                    window.close();
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
