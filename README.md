@@ -6,9 +6,9 @@ https://gis1030.github.io/INF-Paves-Mosaiques-1030/
 
 ## Details
 
-C'est dans cet esprit que la première cartographie des pavés en mosaïque de Schaerbeek a vu le jour, grâce à une synergie exemplaire entre citayenneté et service public. Patrick Bastin a documented ces œuvres au fil de ses promenades et, suite à une collaboration avec Richard Robinson du Service Technique Voirie, l'idée de les répertorier officiellement sur le territoire de la commune s'est concrétisée.
+It was in this spirit that the first map of Schaerbeek's mosaic paving stones was created, thanks to an exemplary synergy between civic engagement and public service. Patrick Bastin documented these works during his walks, and following a collaboration with Richard Robinson of the Roads Technical Department, the idea of ​​officially cataloging them within the municipality became a reality.
 
-In croisant les archives photographiques de M. Bastin avec les données des projets réalisés par le Service Technique Voirie, nous avons pu dresser un inventory précis. Today, 243 countries are registered.
+By cross-referencing Mr. Bastin's photographic archives with data from projects carried out by the Roads Technical Department, we were able to compile a precise inventory. Today, 243 countries are registered.
 
 Last Update
 December 2023
