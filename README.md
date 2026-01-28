@@ -1,6 +1,4 @@
-# INF-Paves-Mosaiques-1030
-Inventory of the mosaic paving stones of the entrances and facades of Schaerbeek
-
+# Inventory of the mosaic paving stones of the entrances and facades of Schaerbeek
 The origin of these pavés goes back to a personal initiative of the artist Ingrid Schreyers, who chose to install a first mosaic on their own. Cet élan artistique a rapidement seduit les Schaerbeekois, devenant une demande récurrente des riverains désireux d’embellir l'espace public et de donner du caractère à leurs rues.
 
 ## Link
